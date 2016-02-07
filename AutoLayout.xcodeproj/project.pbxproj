@@ -9,10 +9,11 @@
 /* Begin PBXBuildFile section */
 		FAD221C81C616D6A0029FDAF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD221C71C616D6A0029FDAF /* AppDelegate.swift */; };
 		FAD221CA1C616D6A0029FDAF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD221C91C616D6A0029FDAF /* ViewController.swift */; };
-		FAD221CD1C616D6A0029FDAF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAD221CB1C616D6A0029FDAF /* Main.storyboard */; };
 		FAD221CF1C616D6A0029FDAF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAD221CE1C616D6A0029FDAF /* Images.xcassets */; };
 		FAD221D21C616D6A0029FDAF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAD221D01C616D6A0029FDAF /* LaunchScreen.xib */; };
 		FAD221DE1C616D6A0029FDAF /* AutoLayoutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD221DD1C616D6A0029FDAF /* AutoLayoutTests.swift */; };
+		FAD222151C667D3A0029FDAF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAD221CB1C616D6A0029FDAF /* Main.storyboard */; };
+		FADCC8DE1C668EFF00035167 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADCC8DD1C668EFF00035167 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		FAD221D71C616D6A0029FDAF /* AutoLayoutTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AutoLayoutTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAD221DC1C616D6A0029FDAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FAD221DD1C616D6A0029FDAF /* AutoLayoutTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoLayoutTests.swift; sourceTree = "<group>"; };
+		FADCC8DD1C668EFF00035167 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,11 +79,10 @@
 		FAD221C41C616D6A0029FDAF /* AutoLayout */ = {
 			isa = PBXGroup;
 			children = (
-				FAD221C71C616D6A0029FDAF /* AppDelegate.swift */,
 				FAD221C91C616D6A0029FDAF /* ViewController.swift */,
 				FAD221CB1C616D6A0029FDAF /* Main.storyboard */,
+				FADCC8DD1C668EFF00035167 /* User.swift */,
 				FAD221CE1C616D6A0029FDAF /* Images.xcassets */,
-				FAD221D01C616D6A0029FDAF /* LaunchScreen.xib */,
 				FAD221C51C616D6A0029FDAF /* Supporting Files */,
 			);
 			path = AutoLayout;
@@ -90,6 +91,8 @@
 		FAD221C51C616D6A0029FDAF /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				FAD221D01C616D6A0029FDAF /* LaunchScreen.xib */,
+				FAD221C71C616D6A0029FDAF /* AppDelegate.swift */,
 				FAD221C61C616D6A0029FDAF /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -156,7 +159,8 @@
 		FAD221BA1C616D6A0029FDAF /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0620;
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = jord3t;
 				TargetAttributes = {
 					FAD221C11C616D6A0029FDAF = {
@@ -192,7 +196,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FAD221CD1C616D6A0029FDAF /* Main.storyboard in Resources */,
+				FAD222151C667D3A0029FDAF /* Main.storyboard in Resources */,
 				FAD221D21C616D6A0029FDAF /* LaunchScreen.xib in Resources */,
 				FAD221CF1C616D6A0029FDAF /* Images.xcassets in Resources */,
 			);
@@ -214,6 +218,7 @@
 			files = (
 				FAD221CA1C616D6A0029FDAF /* ViewController.swift in Sources */,
 				FAD221C81C616D6A0029FDAF /* AppDelegate.swift in Sources */,
+				FADCC8DE1C668EFF00035167 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +280,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -340,6 +346,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AutoLayout/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.trevor.jordet.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -350,6 +357,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AutoLayout/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.trevor.jordet.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -368,6 +376,7 @@
 				);
 				INFOPLIST_FILE = AutoLayoutTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.trevor.jordet.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AutoLayout.app/AutoLayout";
 			};
@@ -383,6 +392,7 @@
 				);
 				INFOPLIST_FILE = AutoLayoutTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.trevor.jordet.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AutoLayout.app/AutoLayout";
 			};
@@ -407,6 +417,7 @@
 				FAD221E31C616D6A0029FDAF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FAD221E41C616D6A0029FDAF /* Build configuration list for PBXNativeTarget "AutoLayoutTests" */ = {
 			isa = XCConfigurationList;
@@ -415,6 +426,7 @@
 				FAD221E61C616D6A0029FDAF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
