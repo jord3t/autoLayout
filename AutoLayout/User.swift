@@ -30,7 +30,8 @@ struct User
             User(name: "John Appleseed", company: "Apple", login: "japple", password: "foo"),
             User(name: "Madison Bumgardner", company: "World Champion San Francisco Giants", login: "madbum", password: "foo"),
             User(name: "John Hennessy", company: "Stanford", login: "hennessy", password: "foo"),
-            User(name: "Bad Guy", company: "Criminals, Inc.", login: "baddie", password: "foo")
+            User(name: "Bad Guy", company: "Criminals, Inc.", login: "baddie", password: "foo"),
+            User(name: "Hacker", company: "Criminals, Inc.", login: "hacker", password: "foo")
             ] {
                 theDatabase[user.login] = user
         }
